@@ -1,25 +1,47 @@
-import logo from './logo.svg';
+import React from "react"
+
+import ClueRow from "./ClueRow";
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const suspectList = [
+        "Colonel Mustard",
+        "Professor Plum",
+        "Mr Green",
+        "Mrs Peacock",
+        "Miss Scarlet",
+        "Mrs White"
+    ]
+    const weaponList = [
+        "Knife",
+        "Candlestick",
+        "Revolver",
+        "Rope",
+        "Lead Pipe",
+        "Wrench"
+    ]
+    const roomList = [
+        "Hall",
+        "Lounge",
+        "Dining Room",
+        "Kitchen",
+        "Ballroom",
+        "Conservatory",
+        "Billiard Room",
+        "Library",
+        "Study"
+    ]
+
+    return (
+        <div className="app-container">
+            {suspectList.map((suspect, idx) => <ClueRow key={idx} name={suspect}/>)}
+            <hr/>
+            {weaponList.map((weapon, idx) => <ClueRow key={idx} name={weapon}/>)}
+            <hr/>
+            {roomList.map((room, idx) => <ClueRow key={idx} name={room}/>)}
+        </div>
+    );
 }
 
 export default App;

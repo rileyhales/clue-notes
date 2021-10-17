@@ -1,0 +1,19 @@
+.clue-row {
+    display: flex;
+    min-height: 35px;
+    height: 2em;
+    margin: 3px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.clue-label {
+    display: inline-block;
+    width: 18ch;
+    height: 100%;
+}
+
+.box-container {
+    display: inline-block;
+    height: 100%;
+}
