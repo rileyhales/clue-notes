@@ -9,8 +9,10 @@ const MarkerBox = (props) => {
             switch (currentCheckState) {
                 case "":
                     return "X"
-                case "X":
+                case "?":
                     return "O"
+                case "X":
+                    return ""
                 case "O":
                     return ""
                 default:
