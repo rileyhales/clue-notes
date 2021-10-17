@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.7af178c0.chunk.css",
-    "main.js": "/static/js/main.bf0cda67.chunk.js",
-    "main.js.map": "/static/js/main.bf0cda67.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e157b6a1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e157b6a1.js.map",
-    "static/js/2.11c3fdeb.chunk.js": "/static/js/2.11c3fdeb.chunk.js",
-    "static/js/2.11c3fdeb.chunk.js.map": "/static/js/2.11c3fdeb.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.7af178c0.chunk.css.map": "/static/css/main.7af178c0.chunk.css.map",
-    "static/js/2.11c3fdeb.chunk.js.LICENSE.txt": "/static/js/2.11c3fdeb.chunk.js.LICENSE.txt"
+    "main.css": "/clue-notes/static/css/main.7af178c0.chunk.css",
+    "main.js": "/clue-notes/static/js/main.bf0cda67.chunk.js",
+    "main.js.map": "/clue-notes/static/js/main.bf0cda67.chunk.js.map",
+    "runtime-main.js": "/clue-notes/static/js/runtime-main.ad1d8c7f.js",
+    "runtime-main.js.map": "/clue-notes/static/js/runtime-main.ad1d8c7f.js.map",
+    "static/js/2.11c3fdeb.chunk.js": "/clue-notes/static/js/2.11c3fdeb.chunk.js",
+    "static/js/2.11c3fdeb.chunk.js.map": "/clue-notes/static/js/2.11c3fdeb.chunk.js.map",
+    "index.html": "/clue-notes/index.html",
+    "static/css/main.7af178c0.chunk.css.map": "/clue-notes/static/css/main.7af178c0.chunk.css.map",
+    "static/js/2.11c3fdeb.chunk.js.LICENSE.txt": "/clue-notes/static/js/2.11c3fdeb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e157b6a1.js",
+    "static/js/runtime-main.ad1d8c7f.js",
     "static/js/2.11c3fdeb.chunk.js",
     "static/css/main.7af178c0.chunk.css",
     "static/js/main.bf0cda67.chunk.js"
