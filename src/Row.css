@@ -1,20 +1,25 @@
-.clue-row {
+.row-element {
     display: flex;
     min-height: 35px;
     height: 2em;
-    margin: 3px 0;
+    padding: 3px 0;
     align-items: center;
     justify-content: center;
+    max-width: 100vw;
 }
 
-.clue-label {
+.row-label {
     display: flex;
-    width: 18ch;
+    width: 110px;
     height: 100%;
     align-items: center;
+    flex: 1 1 auto;
+    margin-left: 2px;
 }
 
-.box-container {
+.row-content {
     display: flex;
     height: 100%;
+    flex: 5 1 auto;
+    width: 190px;
 }

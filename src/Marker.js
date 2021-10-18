@@ -1,20 +1,24 @@
 import React, {useState} from "react"
 
-import "./MarkerBox.css"
+import "./Marker.css"
 
-const MarkerBox = (props) => {
+const Marker = () => {
     const [checkState, setCheckState] = useState("");
-    const onClickFunction = (evt) => {
+    const onClickFunction = () => {
         setCheckState(currentCheckState => {
             switch (currentCheckState) {
                 case "":
-                    return "X"
-                case "X":
                     return "?"
                 case "?":
+                    return "X"
+                case "X":
                     return "O"
                 case "O":
-                    return ""
+                    return "N"
+                case "N":
+                    return "Y"
+                case "Y":
+                    return "\u2713"
                 default:
                     return ""
             }
@@ -24,4 +28,4 @@ const MarkerBox = (props) => {
     return <div className={"marker-box"} onClick={onClickFunction}>{checkState}</div>
 }
 
-export default MarkerBox
+export default Marker

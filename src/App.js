@@ -1,13 +1,13 @@
-import React from "react"
+import React, {useState} from "react"
 
-import ClueRow from "./ClueRow";
+import Row from "./Row";
 
 import './App.css';
 
 function App() {
     const suspectList = [
-        "Colonel Mustard",
-        "Professor Plum",
+        "Col Mustard",
+        "Prof Plum",
         "Mr Green",
         "Mrs Peacock",
         "Miss Scarlet",
@@ -32,14 +32,21 @@ function App() {
         "Library",
         "Study"
     ]
+    const [numPlay, setNumPlay] = useState(6)
+    // useEffect(() => {
+    //     setNumPlay(Number(prompt("Enter Number of Players")))
+    // }, [])
 
     return (
-        <div className="app-container">
-            {suspectList.map((suspect, idx) => <ClueRow key={idx} name={suspect}/>)}
-            <hr/>
-            {weaponList.map((weapon, idx) => <ClueRow key={idx} name={weapon}/>)}
-            <hr/>
-            {roomList.map((room, idx) => <ClueRow key={idx} name={room}/>)}
+        <div>
+            <nav>Clue Notepad</nav>
+            <div className={"notepad-wrapper"}>
+                {suspectList.map((s, idx) => <Row key={idx} name={s} numPlay={numPlay}/>)}
+                <hr/>
+                {weaponList.map((w, idx) => <Row key={idx} name={w} numPlay={numPlay}/>)}
+                <hr/>
+                {roomList.map((r, idx) => <Row key={idx} name={r} numPlay={numPlay}/>)}
+            </div>
         </div>
     );
 }

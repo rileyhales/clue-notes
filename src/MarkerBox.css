@@ -1,9 +1,0 @@
-.marker-box {
-    display: flex;
-    margin: 0 3px;
-    min-width: 30px;
-    min-height: 30px;
-    background: lightgray;
-    align-items: center;
-    justify-content: center;
-}
