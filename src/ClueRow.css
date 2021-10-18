@@ -8,12 +8,13 @@
 }
 
 .clue-label {
-    display: inline-block;
+    display: flex;
     width: 18ch;
     height: 100%;
+    align-items: center;
 }
 
 .box-container {
-    display: inline-block;
+    display: flex;
     height: 100%;
 }
